@@ -1,4 +1,8 @@
-# H1 **0x02. Shell, I/O Redirections and filters**
+Alt-H1 **0x02. Shell, I/O Redirections and filters**
+
+Alt-H2 **Description**
+
+# H3 This project in system engineering and devops focuses on:  
 
 0. Hello World - script that prints Hello, World, followed by a new line to the standard output.
 1. Confused smiley - script that displays a confused smiley "(Ôo)'.
