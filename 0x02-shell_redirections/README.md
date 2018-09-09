@@ -1,6 +1,6 @@
-Alt-H1 **0x02. Shell, I/O Redirections and filters**
+# H1 **0x02. Shell, I/O Redirections and filters**
 
-Alt-H2 **Description**
+# H2 **Description**
 
 # H3 This project in system engineering and devops focuses on:  
 
