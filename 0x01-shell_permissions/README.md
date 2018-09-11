@@ -1,3 +1,6 @@
+# 0x01. Shell_permissions
+---
+
 0. My name is Betty - this changes user ID to betty
 1. Who am I - script that prints the effective userid of the current user
 2. Groups - script that prints all the groups the current user is part of
