@@ -9,3 +9,6 @@ This project in system engineering and devops is about:
 2. Shell permisions
 3. Shell redirections
 4. Shell variables and expansions 
+
+## Author
+`stefan silverio`
