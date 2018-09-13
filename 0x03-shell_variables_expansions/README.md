@@ -12,7 +12,7 @@ This project in holberton-system_engineering-devops is about:
 ---
 File|Task
 ---|---
-0-<o> | script that creates an alias.
+0-Confused smiley | script that creates an alias.
 1-Hello you | script that prints hello user, where user is the current Linux user.
 2-The path to success is to take massive, determined action | Add /action to the PATH.
 3-If the path be beautiful, let us not ask where it leads | script that counts the number of directories in the PATH.
