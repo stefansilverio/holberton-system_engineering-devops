@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #  this script prints time for next 12 hrs
+
 cntr1=0
-echo "Hour:" $cntr1
+echo "Hour: "$cntr1
 while [ $cntr1 -lt 12 ]
 do
     cntr2=1
@@ -11,5 +12,5 @@ do
 	((cntr2++))
     done
     ((cntr1++))
-    echo "Hour:" $cntr1
+    echo "Hour: "$cntr1
 done
