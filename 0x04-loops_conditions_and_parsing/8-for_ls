@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#  this file prints cuts file names
+
+# count = ls -C | wc -w
+
+l=$(ls)
+for i in $l
+do
+    echo "$i" | cut -d '-' -f 2,3
+done
