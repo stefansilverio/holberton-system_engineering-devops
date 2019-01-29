@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#  this program solves the fizzbuzz challenge
+cntr=0
+until [ $cntr -ge 100 ]
+do
+    ((cntr++))
+    if [ $((cntr % 15)) -eq 0 ]
+    then
+	echo "FizzBuzz"
+    elif [ $((cntr % 3)) == 0 ]
+    then
+	echo "Fizz"
+    elif [ $((cntr % 5)) == 0 ]
+    then
+	echo "Buzz"
+    else
+	echo $cntr
+    fi
+done
