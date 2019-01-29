@@ -3,7 +3,7 @@
 ## Description
 
 This project in the System engineering & DevOps series is about:
-*
+* How to create SSH keys
 
 ---
 File|Task
