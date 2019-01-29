@@ -3,7 +3,7 @@
 
 cntr1=0
 echo "Hour: "$cntr1
-while [ $cntr1 -lt 12 ]
+while [ $cntr1 -lt 13 ]
 do
     cntr2=1
     while [ $cntr2 -le 59 ]
@@ -12,5 +12,9 @@ do
 	((cntr2++))
     done
     ((cntr1++))
+    if [ $cntr1 -eq 13 ]
+    then
+	break
+    fi
     echo "Hour: "$cntr1
 done
