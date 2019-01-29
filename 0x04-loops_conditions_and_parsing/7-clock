@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#  this script prints time for next 12 hrs
+cntr1=0
+echo "Hour:" $cntr1
+while [ $cntr1 -lt 12 ]
+do
+    cntr2=1
+    while [ $cntr2 -le 59 ]
+    do
+	echo $cntr2
+	((cntr2++))
+    done
+    ((cntr1++))
+    echo "Hour:" $cntr1
+done
