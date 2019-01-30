@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#  this script kills another running process
+kill $(ps -u | pgrep -f bash)
