@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#  kill a process without using kill
+ps -u | pkill -f bash
