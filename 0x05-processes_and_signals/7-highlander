@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #  display 'To infinity and beyond'
 trap "echo I am invincible!!!" SIGTERM
-counter=0
-while [ $counter -ge 0 ]
+while [ 1 ]
 do
 	echo "To infinity and beyond"
 	sleep 2
