@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#  this script parses a psswd file
+$line
+while read line
+do
+    cut -d':' -f 1,3,6
+done <"/etc/passwd"
