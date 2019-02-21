@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#  questions about UDP and TCP ports
+ping -c 5 $1
+echo "Usage: 5-is_the_host_on_the_network $1"
