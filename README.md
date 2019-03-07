@@ -10,6 +10,7 @@ This project in system engineering and devops is about:
 * Loop Conditions and Parsing
 * Networking basics
 * Managing Processes and Signals
+* More processes and signals
 
 ## Author
 `stefan silverio`
