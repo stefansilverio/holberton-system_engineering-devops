@@ -8,7 +8,7 @@ This project in system engineering and devops is about:
 * Shell Redirections
 * Shell Variables and Expansions
 * Loop Conditions and Parsing
-* Networking
+* Networking basics
 * Managing Processes and Signals
 
 ## Author
