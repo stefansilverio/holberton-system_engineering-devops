@@ -1,0 +1,25 @@
+# 0x09. Web infrastructure design
+---
+## Description
+
+This project in System engineering and DevOps is about:
+* How the backend of a website is designed
+* What is reliability? Scalability?
+* How to manage load?
+* What is a SPOF?
+* How to update a server?
+* What is high availabilty?
+* What are virtual servers?
+* What is redundancy?
+* What is QPS?
+
+---
+File|Task
+---|---
+0-simple_web_stack
+1-distributed_web_infrastructure
+2-secured_and_monitored_web_infrastructure
+3-scale_up
+
+## Author
+`stefan silverio`
