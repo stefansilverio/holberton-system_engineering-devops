@@ -16,10 +16,10 @@ This project in System engineering and DevOps is about:
 ---
 File|Task
 ---|---
-0-simple_web_stack
-1-distributed_web_infrastructure
-2-secured_and_monitored_web_infrastructure
-3-scale_up
+0-simple_web_stack | Illustrate simple LAMP stack
+1-distributed_web_infrastructure | 3 server web infrastructure
+2-secured_and_monitored_web_infrastructure | Secured and monitored infrastructure
+3-scale_up | Split components
 
 ## Author
 `stefan silverio`
