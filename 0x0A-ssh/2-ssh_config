@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+Host ubuntu
+     HostName 35.237.253.193
+     User me
+     IdentityFile ~/.ssh/holberton
+     PasswordAuthentication "no"
