@@ -8,9 +8,11 @@ touch index.html
 path="/etc/nginx/sites-available"
 echo "server {
     listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name localhost;
+    root /etc/nginx/html;
     location / {
-        root /etc/nginx/html;
-        index index.html;
+        index index.html index.html;
     }
 }" > "$path/default"
 echo "Holberton School for the win!" > /etc/nginx/html/index.html
