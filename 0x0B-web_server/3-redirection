@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# configure 301 redirection
+ssh ubuntu@35.237.253.193;
+new_string=server_name goldstone.space;\nreturn 301 https://twitter.com/i/notifications;
+sed -i "s/server_name localhost/$new_string/" /etc/nginx/sites-available/default;
