@@ -8,12 +8,10 @@ touch index.html
 path="/etc/nginx/sites-available"
 echo "server {
     listen 80 default_server;
-    listen [::]:80 default_server;
-    server_name localhost;
     root /etc/nginx/html;
     location / {
         index index.html index.html;
     }
 }" > "$path/default"
 echo "Holberton School for the win!" > /etc/nginx/html/index.html
-service nginx restart
+sudo service nginx restart
