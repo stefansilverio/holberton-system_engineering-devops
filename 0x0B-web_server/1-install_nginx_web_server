@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
 # install nginx server
-curl ubuntu@35.237.253.193
+apt-get install nginx -y
+path="/etc/nginx/sites-available"
+echo "server {
+    listen 80 default_server;
+    server_name goldstone.space;
+    return 301 https://twitter.com/i/notifications;
+    location / {
+        root /etc/nginx/html;
+        index index.html;
+    }
+}" > "$path/default"
+echo "Holberton School for the win!" > /etc/nginx/html/index.html
+service nginx restart
