@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# create 404 error
+./1-install_nginx_web_server
+echo "Ceci n'est pas une page" > /etc/nginx/html/error.html
+sed -i "4i\error_page  404  /error.html;" /etc/nginx/sites-available/default
+sudo service nginx restart
