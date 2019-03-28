@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # configure 301 redirection
 ./1-install_nginx_web_server
-sed -i "4i\server_name goldstone.space;\nreturn 301 https://twitter.com/i/notifications;" /etc/nginx/sites-available/default
+sed -i "3i\location /redirect_me {\n return 301 https://twitter.com/i/notifications; }" /etc/nginx/sites-available/default
 sudo service nginx restart
