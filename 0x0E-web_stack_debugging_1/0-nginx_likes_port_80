@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# run nginx server, make it listen to port 80
+path="/etc/nginx/sites-enabled"
+echo "server {
+             listen 80 default_server;
+             listen [::]:80 default_server;
+
+             root /usr/share/nginx/html;
+             index index.html index.htm;
+
+             server_name localhost;
+
+             location / {
+                 index index.html;
+             }
+
+}" > "$path/default"
+
+/usr/sbin/nginx
