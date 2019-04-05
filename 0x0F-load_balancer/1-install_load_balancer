@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 # this script configures web server
 
+apt-get install software-properties-common -y
+add-apt-repository ppa:vbernat/haproxy-1.8 -y
+apt-get update -y
+apt-get install haproxy=1.8.\* -y
+
 echo "
 frontend haproxynode
     bind *:80
     mode http
     default_backend web-servers
-
 backend web-servers
         balance roundrobin
         server 494-web-01 35.237.253.193:80 check
