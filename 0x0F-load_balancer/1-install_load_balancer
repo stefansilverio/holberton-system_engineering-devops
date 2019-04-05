@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# this script configures web server
+
+echo "
+frontend haproxynode
+    bind *:80
+    mode http
+    default_backend web-servers
+
+backend web-servers
+        balance roundrobin
+        server 494-web-01 35.237.253.193:80 check
+        server 494-web-02 35.231.141.38:80 check" >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart
