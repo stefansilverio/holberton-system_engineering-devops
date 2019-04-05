@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# install nginx server
+apt-get install nginx -y
+path="/etc/nginx/sites-enabled"
+echo "server {
+    listen 80 default_server;
+    location / {
+             add_header X-Served-By $HOSTNAME;
+    }
+}" > "$path/default"
+
+sudo service nginx restart
