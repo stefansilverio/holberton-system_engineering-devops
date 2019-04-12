@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# queries domains for certain responses
+
+
+root="$1"
+
+func ()
+{
+    for arg
+    do
+	echo -n "$root"
+	dig "$arg"."$root" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " " $4 " " $5 }'
+    done
+}
+
+ if [ "$#" -eq 2 ]
+    then
+	echo -n "$1"
+	dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " " $4 " " $5 }'
+ else
+     func "www" "lb-01" "web-01" "web-02"
+ fi
