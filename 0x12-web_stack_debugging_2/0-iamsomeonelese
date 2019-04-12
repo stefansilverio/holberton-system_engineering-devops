@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# tell me who I am
+if [ "$#" -eq 0 ]
+then
+    whoami
+else
+    su $1 -c whoami
+fi
