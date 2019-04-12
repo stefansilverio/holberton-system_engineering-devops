@@ -6,17 +6,19 @@ root="$1"
 
 func ()
 {
-    for arg
+    for arg in "$@"
     do
-	echo -n "$root"
-	dig "$arg"."$root" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " " $4 " " $5 }'
+	echo -n 'The subdomain '
+	echo -n "$arg"
+	dig "$arg"."$root" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " is a " $4 " record and points to " $5}'
     done
 }
 
  if [ "$#" -eq 2 ]
     then
-	echo -n "$1"
-	dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " " $4 " " $5 }'
+     	echo -n 'The subdomain '
+	echo -n "$2"
+	dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -n+2 | awk '{ print " is a " $4 " record and points to " $5 }'
  else
      func "www" "lb-01" "web-01" "web-02"
  fi
