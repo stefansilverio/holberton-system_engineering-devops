@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """return number of subscribers for subreddit"""
-import requests
 import json
 import sys
+import requests
 
 
 def number_of_subscribers(subreddit):
@@ -10,14 +10,14 @@ def number_of_subscribers(subreddit):
     headers = {
         'User-Agent': 'Mozilla/5.0'
     }
-    url = 'https://www.reddit.com/api/search_reddit_names.json'
-    valid = requests.get(url, headers=headers, params={'query': subreddit})\
-                    .json()
+
     url = 'https://www.reddit.com/r/' + subreddit + '/about.json'
 
-    if subreddit in valid['names']:
-        sub = requests.get(url,
-                           headers=headers).json()
-        return (sub['data']['subscribers'])
-    else:
-        return (0)
+    sub = requests.get(url,
+                       headers=headers)
+
+    if (sub.status_code != 200):
+        return 0
+
+    elif 'subscribers' in sub.json()['data']:
+            return (sub.json()['data']['subscribers'])
