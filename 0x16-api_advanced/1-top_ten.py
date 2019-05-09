@@ -21,3 +21,5 @@ def top_ten(subreddit):
             if cnt < 10:
                 print(dicti['data']['title'])
             cnt += 1
+    else:
+        print(None)
