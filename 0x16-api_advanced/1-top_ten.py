@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """print titles of hot top ten"""
-import sys
 import json
 import requests
+import sys
 
 
 def top_ten(subreddit):

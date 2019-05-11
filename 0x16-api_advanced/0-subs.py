@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """return number of subscribers for subreddit"""
 import json
-import sys
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
@@ -21,6 +21,5 @@ def number_of_subscribers(subreddit):
         if (sub.status_code != 200):
             return 0
         sub = sub.json()
-        if 'subscribers' in sub['data']:
-            return (sub['data']['subscribers'])
+        return (sub['data']['subscribers'])
     return 0
